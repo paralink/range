@@ -10,9 +10,9 @@ import (
 )
 
 func main() {
-	expression := flag.String("e", "", "range expression. \"-e=a,b1~b3,c\"")
-	delimiter := flag.String("d", " ", "delimiter character. \"-d='\\n'\"")
-	surround := flag.String("s", "", "surround character. \"-s=' '\" ")
+	expression := flag.String("e", "", "range expression. '-e a,b1~b3,c'")
+	delimiter := flag.String("d", " ", "delimiter character. '-d \"\\n\"'")
+	surround := flag.String("s", "", "surround character. '-s \\\"'")
 	flag.Parse()
 
 	if *expression == "" {
